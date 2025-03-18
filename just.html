@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Defined Objects Example</title>
+</head>
+<body>
+
+<script>
+    // Number
+const numberObj = new Number(42);
+console.log("Number Object:", numberObj);
+console.log("Type:", typeof numberObj);
+console.log("Methods:", Object.getOwnPropertyNames(Number.prototype).filter(item => typeof numberObj[item] === 'function').slice(0, 5));
+
+// Boolean
+const booleanObj = new Boolean(true);
+console.log("\nBoolean Object:", booleanObj);
+console.log("Type:", typeof booleanObj);
+console.log("Methods:", Object.getOwnPropertyNames(Boolean.prototype).filter(item => typeof booleanObj[item] === 'function').slice(0, 5));
+
+// String
+const stringObj = new String("Hello, World!");
+console.log("\nString Object:", stringObj);
+console.log("Type:", typeof stringObj);
+console.log("Methods:", Object.getOwnPropertyNames(String.prototype).filter(item => typeof stringObj[item] === 'function').slice(0, 5));
+
+// Math 
+console.log("\nMath Object:");
+console.log("Type:", typeof Math);
+console.log("Methods:", Object.getOwnPropertyNames(Math).filter(item => typeof Math[item] === 'function').slice(0, 5));
+
+// Date
+const dateObj = new Date();
+console.log("\nDate Object:", dateObj);
+console.log("Type:", typeof dateObj);
+console.log("Methods:", Object.getOwnPropertyNames(Date.prototype).filter(item => typeof dateObj[item] === 'function').slice(0, 5));
+
+// RegExp
+const regExpObj = new RegExp('\\w+');
+console.log("\nRegExp Object:", regExpObj);
+console.log("Type:", typeof regExpObj);
+console.log("Methods:", Object.getOwnPropertyNames(RegExp.prototype).filter(item => typeof regExpObj[item] === 'function').slice(0, 5));
+
+// Array
+const arrayObj = new Array(1, 2, 3);
+console.log("\nArray Object:", arrayObj);
+console.log("Type:", typeof arrayObj);
+console.log("Methods:", Object.getOwnPropertyNames(Array.prototype).filter(item => typeof arrayObj[item] === 'function').slice(0, 5));
+    const car1 = {
+        brand: "Toyota",
+        model: "Camry",
+        year: 2023,
+        color: "Silver",
+        distance: 15000,
+
+        start: function() {
+            return "The car is started.";
+        },
+
+        drive: function(distance) {
+            this.distance += distance;
+            return `The car has been driven for ${distance} km. Total distance: ${this.distance} km.`;
+        },
+
+        honk: function() {
+            return "Beeeeeeeeeeeeb!";
+        }
+    };
+    const laptop1 = {
+        brand: "Dell",
+        model: "XPS 13",
+        screenSize: 13.4,
+        RAM: 16,
+        storage: "512GB SSD",
+
+        turnOn: function() {
+            return "The laptop is turned on.";
+        },
+
+        openApp: function(appName) {
+            return `Opening ${appName} app.`;
+        },
+
+        sleep: function() {
+            return "The laptop is in sleep mode.";
+        }
+    };
+    document.write('<h2>User-Defined Objects Example</h2>');
+    document.write('<pre>');
+    document.write('<h3>Car Object</h3>');
+    document.write('<p>Brand: ' + car1.brand + '</p>');
+    document.write('<p>Model: ' + car1.model + '</p>');
+    document.write('<p>Year: ' + car1.year + '</p>');
+    document.write('<p>Color: ' + car1.color + '</p>');
+    document.write('<p>distance: ' + car1.distance + ' km</p>');
+    document.write('<p>' + car1.start() + '</p>');
+    document.write('<p>' + car1.drive(100) + '</p>');
+    document.write('<p>' + car1.honk() + '</p>');
+    document.write('<h3>Laptop Object</h3>');
+    document.write('<p>Brand: ' + laptop1.brand + '</p>');
+    document.write('<p>Model: ' + laptop1.model + '</p>');
+    document.write('<p>Screen Size: ' + laptop1.screenSize + ' inches</p>');
+    document.write('<p>RAM: ' + laptop1.RAM + ' GB</p>');
+    document.write('<p>Storage: ' + laptop1.storage + '</p>');
+    document.write('<p>' + laptop1.turnOn() + '</p>');
+    document.write('<p>' + laptop1.openApp('Web Browser') + '</p>');
+    document.write('<p>' + laptop1.sleep() + '</p>');
+    document.write('</pre>');
+</script>
+
+</body>
+</html>

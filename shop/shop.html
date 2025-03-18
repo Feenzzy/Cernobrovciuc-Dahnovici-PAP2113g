@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C&C</title>
+
+    <style>
+        .center-container {
+            margin: auto;
+            text-align: center;
+        }
+
+        header {
+            margin: 0;
+            background-color: #333;
+            background-position: center;
+            padding: 0;
+            display: flex;
+
+        }
+
+
+
+        .menu {
+            position: relative;
+            display: inline-block;
+
+        }
+
+        .menubtn {
+            size: 32, 32;
+            justify-content: left;
+
+        }
+
+        .menuitems {
+            position: absolute;
+            display: none;
+            background-color: #333;
+            padding: 0;
+            margin: 0;
+            color: #fff;
+            border: #000000;
+        }
+
+        .menuitems a {
+            padding: 0;
+            margin-top: 1em;
+            color: #fff;
+            text-align: center;
+            font-size: 120%;
+            text-decoration: none;
+        }
+
+        .menuitems a:hover {
+            color: #cdcdcd;
+        }
+
+        .menu:hover .menuitems {
+            display: block;
+        }
+
+        .inline {
+            display: inline-block;
+        }
+
+       
+
+        .center-container {
+            max-width: 800px;
+            margin: auto;
+            text-align: justify;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: x-large;
+            color: #fff;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: large;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        p,
+        .p {
+            text-align: justify;
+            text-indent: 20px;
+            color: #cfcfcf;
+        }
+
+        ol,
+        ul {
+            padding-left: 20px;
+        }
+
+        ol.p,
+        ul.p {
+            color: #cfcfcf;
+        }
+
+        li {
+            text-align: justify;
+            text-indent: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            color: #3333;
+            background-color: #FFFFFF;
+            padding: 0;
+            
+        }
+        table {
+            align-self: center;
+            width: 90%;
+            height: auto;
+            padding: 8px;
+            padding-left: 100px;
+            margin-bottom: 20px;
+            border: 1px solid #33333300;
+        }
+
+        th,
+        td {
+            width: 30%;
+            height: auto;
+            padding: 8px;
+            text-align: left;
+            border-radius: 6px;
+            border: 1px solid #00000012;
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            width: auto;
+        }
+
+        button {
+
+
+            padding: 5px 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+
+</head>
+<header>
+    <div class="menu">
+        <buttonc ><img src="../main_img/menu_icon.png" style="height: 32px;width: 64px;"></button>
+            <div class="menuitems">
+                <a href="../main.html">Cover</a>
+                <a href="../home/home.html">Home</a>
+                <a href="../cart/cart.html">Cart</a>
+                <a href="../home/reviews.html">Reviews</a>
+            </div>
+    </div>
+
+
+
+</header>
+
+<body>
+
+    <div style="align-items: center;">
+        <script src="shop.js"></script>
+        <table>
+            <tbody id="x">
+                <script>
+                    items_show("x");
+                </script>
+            </tbody>
+        </table>
+    </div>
+    
+    
+
+</body>
+
+</html>

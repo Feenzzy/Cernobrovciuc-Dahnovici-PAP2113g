@@ -1,0 +1,23 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "name": "Carhartt WIP Madison Corduroy Shirt",
+        "price": 65,
+        "image": "shop_data/192512.png"
+      },
+      {
+        "id": 2,
+        "name": "Carhartt WIP madison corduroy shirt in green",
+        "price": 120,
+        "image": "shop_data/192651.png"
+      },
+      {
+        "id": 3,
+        "name": "Polo Ralph Lauren icon logo herringbone print jersey shirt in grey marl/white",
+        "price": 80,
+        "image": "shop_data/192742.png"
+      }
+      
+    ]
+  }

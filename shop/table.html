@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerno_Corporations</title>
+
+    <style>
+        .center-container {
+            margin: auto;
+            text-align: center;
+        }
+
+        header {
+            margin: 0;
+            background-color: #333;
+            background-position: center;
+            padding: 0;
+            display: flex;
+
+        }
+
+
+
+        .menu {
+            position: relative;
+            display: inline-block;
+
+        }
+
+        .menubtn {
+            size: 32, 32;
+            justify-content: left;
+
+        }
+
+        .menuitems {
+            position: absolute;
+            display: none;
+            background-color: #333;
+            padding: 0;
+            margin: 0;
+            color: #fff;
+            border: #000000;
+        }
+
+        .menuitems a {
+            padding: 0;
+            margin-top: 1em;
+            color: #fff;
+            text-align: center;
+            font-size: 120%;
+            text-decoration: none;
+        }
+
+        .menuitems a:hover {
+            color: #cdcdcd;
+        }
+
+        .menu:hover .menuitems {
+            display: block;
+        }
+
+        .inline {
+            display: inline-block;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            color: #3333;
+            background-color: #FFFFFF;
+            padding: 0;
+        }
+
+        .center-container {
+            max-width: 800px;
+            margin: auto;
+            text-align: justify;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: x-large;
+            color: #fff;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: large;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        p,
+        .p {
+            text-align: justify;
+            text-indent: 20px;
+            color: #cfcfcf;
+        }
+
+        ol,
+        ul {
+            padding-left: 20px;
+        }
+
+        ol.p,
+        ul.p {
+            color: #cfcfcf;
+        }
+
+        li {
+            text-align: justify;
+            text-indent: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+
+            padding: 8px;
+            text-align: center;
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        button {
+
+
+            padding: 5px 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<header>
+    <div class="menu">
+        <buttonc><img src="../main_img/menu_icon.png"></button>
+            <div class="menuitems">
+                <a href="../main.html">Cover</a>
+                <a href="../home/home.html">Home</a>
+                <a href="../cart/cart.html">Cart</a>
+            </div>
+    </div>
+
+
+
+</header>
+
+<body>
+    <script src="shop.js" defer></script>
+    <table>
+        <tr>
+            <td>
+                <img src="shop_data/192512.png" alt="Carhartt WIP madison corduroy shirt in pink">
+            </td>
+            <td>
+                <img src="shop_data/192651.png" alt="Carhartt WIP madison corduroy shirt in green">
+            </td>
+            <td>
+                <img src="shop_data/192742.png"
+                    alt="Polo Ralph Lauren icon logo herringbone print jersey shirt in grey marl/white">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Carhartt WIP madison corduroy shirt in pink #192512
+            </td>
+            <td>
+                Carhartt WIP madison corduroy shirt in green #192651
+            </td>
+            <td>
+                Polo Ralph Lauren icon logo herringbone print jersey shirt in grey marl/white #192742
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="b1"  display="inline-block">Add to cart</button>
+            </td>
+            <td>
+                <button id="b1" display="inline-block">Add to cart</button>
+            </td>
+            <td>
+                <button  id="b1" display="inline-block">Add to cart</button>
+            </td>
+        </tr>
+    </table>
+    <!---->
+    <table>
+        <tr>
+            <td>
+                <img src="shop_data/192805.png" alt="Selected Homme loose fit jeans in light wash">
+            </td>
+            <td>
+                <img src="shop_data/192829.png"
+                    alt="ONLY & SONS Edge loose fit carpenter trouser with contrast stitch in black">
+            </td>
+            <td>
+                <img src="shop_data/192851.png"
+                    alt="ONLY & SONS Edge loose fit carpenter trouser with contrast stitch in brown">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Selected Homme loose fit jeans in light wash #192805
+            </td>
+            <td>
+                ONLY & SONS Edge loose fit carpenter trouser with contrast stitch in black #192829
+            </td>
+            <td>
+                ONLY & SONS Edge loose fit carpenter trouser with contrast stitch in brown #192851
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="b1" display="inline-block">Add to cart</button>
+            </td>
+            <td>
+                <button id="b1" display="inline-block">Add to cart</button>
+            </td>
+            <td>
+                <button id="b1" display="inline-block">Add to cart</button>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

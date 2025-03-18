@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C&C</title>
+    <style>
+        
+        .name
+        {
+          
+            display: flex;
+            flex-direction: column; /* or row based on your preference */
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-decoration: none;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 400%;
+        } 
+        .center-container {
+            margin: auto;
+            text-align: center;
+        }
+        header
+        {
+            margin: 0 ;
+            background-size: cover;
+            background-image: url("main_img/header.jpg");
+            background-position: center;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+
+        }
+        body
+        {
+            margin: 0;
+            
+            
+        }
+        .menu
+        {
+            position: relative;
+            display: block;
+        }
+        .menubtn
+        {
+            size: 32, 32;
+            justify-content: left;
+        }
+        .menuitems
+        {
+            position: absolute;
+            display: none;
+            background-color: #333;
+            padding: 0;
+            margin: 0;
+            color: #fff;
+            border: #000000;
+        }
+        .menuitems a
+        {
+            padding: 0;
+            margin-top: 1em ;
+            color: #fff;
+            text-align: center;
+            font-size: 120%;
+            text-decoration: none;
+            
+        }
+        .menuitems a:hover
+        {
+            color: #cdcdcd;
+        }
+        .menu:hover .menuitems
+        {
+            display: block;
+        }
+    </style>
+    
+</head>
+<header>
+    <div class="menu">
+        <buttonc ><img src="main_img/menu_icon.png" style="height: 32px;width: 64px;"></button>
+    <div class="menuitems">
+        <a href="home/home.html">Home</a>
+        <a href="shop/shop.html">Shop</a>
+        <a href="cart/cart.html">Cart</a>
+        <a href="home/reviews.html">Reviews</a>
+    </div>
+    </div>
+    <div class="center-container">
+         <div class="name">C&C_Corporations</div>
+    </div>
+   
+
+</header>
+<body>
+   
+
+
+<footer>
+  
+</footer>
+
+</body>
+</html>
